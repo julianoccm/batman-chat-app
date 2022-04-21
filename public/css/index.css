@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;500&family=Ropa+Sans&display=swap");
+
+body {
+  background-color: black;
+  padding: 20px;
+}
+
+div {
+  color: rgb(0, 255, 0);
+  font-family: monospace;
+  font-size: 15px;
+  margin: 13px 0px;
+  font-family: Ropa Sans;
+}
+
+.logo {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
