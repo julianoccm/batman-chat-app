@@ -7,8 +7,9 @@ const io = require("socket.io")(server, {
     origin: "*",
     methods: ["GET", "POST"],
   },
-  rejectUnauthorized: false,
 });
+
+io.connect("")
 
 app.set("views", "./views");
 app.set("io", io);
