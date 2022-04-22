@@ -2,7 +2,12 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const server = require("http").Server(app);
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"],
+  },
+});
 
 app.set("views", "./views");
 app.set("io", io);
@@ -23,7 +28,7 @@ app.get("/:room", (req, res) => {
   res.render("room", { roomName: req.params.room });
 });
 
-server.listen(process.env.PORT || 3000) 
+server.listen(process.env.PORT || 3000);
 
 io.on("connection", (socket) => {
   socket.on("send-chat-message", (room, message) => {
