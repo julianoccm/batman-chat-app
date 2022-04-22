@@ -7,6 +7,7 @@ const io = require("socket.io")(server, {
     origin: "*",
     methods: ["GET", "POST"],
   },
+  rejectUnauthorized: false,
 });
 
 app.set("views", "./views");
