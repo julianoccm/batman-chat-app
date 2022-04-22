@@ -9,8 +9,6 @@ const io = require("socket.io")(server, {
   },
 });
 
-io.connect("")
-
 app.set("views", "./views");
 app.set("io", io);
 app.set("view engine", "ejs");
