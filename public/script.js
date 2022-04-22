@@ -30,6 +30,7 @@ function appendMessage(message) {
   }
 
   messageContainer.append(messageElement);
+  messageElement.scrollIntoView({behavior: "smooth"});
 }
 
 socket.on("chat-message", (data) => {

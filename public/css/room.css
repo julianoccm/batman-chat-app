@@ -2,11 +2,11 @@
 
 body {
   background-color: black;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 div {
-  color: rgb(0, 255, 0);
+  color: green;
   font-family: monospace;
   font-size: 15px;
   margin: 13px 0px;
@@ -14,12 +14,27 @@ div {
 }
 
 .logo {
+  position: fixed;
+  background-color: black;
+  height: 40px;
+
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  padding-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
   font-size: 25px;
+  color: rgb(0, 255, 0);
   text-align: center;
 }
 
 .you-text {
-  color: green;
+  color: rgb(0, 255, 0);
 }
 
 #send-container {
