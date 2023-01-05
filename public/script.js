@@ -1,4 +1,4 @@
-const socket = io("https://batman-chat-app.onrender.com");
+const socket = io("http://localhost:3000");
 
 const messageForm = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
